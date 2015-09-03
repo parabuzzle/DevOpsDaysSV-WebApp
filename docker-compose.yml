@@ -1,0 +1,7 @@
+web:
+  build: .
+  volumes:
+    - ./webapp:/webapp
+  ports:
+    - "4567:4567"
+  command: bundle exec foreman start

@@ -1,0 +1,13 @@
+source "https://rubygems.org"
+
+ruby "2.2.2"
+
+gem 'sinatra'
+gem 'pry'
+gem 'oj'
+gem 'unicorn'
+gem 'foreman'
+gem 'rake'
+gem 'slim'
+gem 'rack', '~> 1.6.0'
+gem 'sinatra-contrib'
