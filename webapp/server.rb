@@ -2,7 +2,8 @@ require 'oj'
 require 'pry'
 require 'sinatra/base'
 require 'sinatra/contrib'
-require_relative './data/schedule'
+require_relative './data/schedule_day_one'
+require_relative './data/schedule_day_two'
 
 
 class DoDWeb < Sinatra::Base
@@ -14,13 +15,20 @@ class DoDWeb < Sinatra::Base
     set :static, true
   end
 
+  def full_schedule
+    [
+      dayOne: Schedule::DayOne.schedule,
+      dayTwo: Schedule::DayTwo.schdeule,
+    ]
+  end
+
 
   get '/' do
     redirect "http://www.devopsdays.org/events/2015-siliconvalley/"
   end
 
   get '/schedule.json' do
-    json Schedule.full
+    json full_schedule
   end
 
   error 404 do
