@@ -27,7 +27,7 @@ class Schedule
           shortTitle:    "DevOpsDaysSV SOTU",
           desc:          "John Willis will walk us through where DevOps is today and where we're going in the future.",
           twitter:       "#DevOpsDaysSV2015",
-          image:         "",
+          image:         "heijmans.jpg",
         },
         {
           timeStart:     "9:35",
