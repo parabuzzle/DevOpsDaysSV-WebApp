@@ -18,7 +18,7 @@ class DoDWeb < Sinatra::Base
   def full_schedule
     [
       dayOne: Schedule::DayOne.schedule,
-      dayTwo: Schedule::DayTwo.schdeule,
+      dayTwo: Schedule::DayTwo.schedule,
     ]
   end
 
