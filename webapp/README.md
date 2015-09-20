@@ -1,5 +1,31 @@
 # DevOpsDaysSV-WebApp
 
+## Testing the application
+
+### Rspec
+
+```
+rspec
+```
+
+All tests should pass. These are basic tests to verify data integrity and formating.
+
+**BEFORE SUBMITTING A PULL REQUEST THAT CHANGES DATA FILES, PLEASE RUN THESE TESTS**
+
+### Integration Tests
+
+in most circumstances you won't need to run integration tests. CircleCI will do it for you. If you want to run it locally, here's how:
+
+  * Run the docker container using `docker-compose up`
+  * Set the APP_URL environment variable to the url where the app is running
+  * Run `bundle exec ./verify_api
+
+example:
+
+```
+APP_URL=http://192.168.99.100:4567 bundle exec ./verify_api
+```
+
 ## Data Files
 
 Rather than using a database, we're just using data files found in the `data` directory. This is simple and easy to read and edit.
@@ -18,8 +44,8 @@ Each event item hash must contain all the keys that the iOS app consumes or it w
 #   locationName  -> The location of the item (ie: Auditorium)
 #   presenterName -> The name of the presenter of sponsor of the item
 #   eventClass    -> Type of event (ie: General, Talk, Keynote, Ignite, etc)
-#   info          -> Short description that shows in the tableView. (keep less than 40 chars if possible)
-#   shortTitle    -> The title in the eventDetailView's title bar (keep less than 15 chars if possible)
+#   info          -> Short description that shows in the tableView. (Max chars: 40)
+#   shortTitle    -> The title in the eventDetailView's title bar (Max chars: 15)
 #   desc          -> Full description in the eventDetailView.
 #   twitter       -> Twitter handle for the Presenter or HashTag to promote for the Talk
 #   image         -> The image of the presenter or sponsor. Place images in the `public/img` directory. (if blank it will be the DoDSV logo)

@@ -18,8 +18,8 @@ This file contains the schedule of events for the first day.
 #   locationName  -> The location of the item (ie: Auditorium)
 #   presenterName -> The name of the presenter of sponsor of the item
 #   eventClass    -> Type of event (ie: General, Talk, Keynote, Ignite, etc)
-#   info          -> Short description that shows in the tableView. (keep less than 40 chars if possible)
-#   shortTitle    -> The title in the eventDetailView's title bar (keep less than 15 chars if possible)
+#   info          -> Short description that shows in the tableView. (Max chars: 40)
+#   shortTitle    -> The title in the eventDetailView's title bar (Max chars: 15)
 #   desc          -> Full description in the eventDetailView.
 #   twitter       -> Twitter handle for the Presenter or HashTag to promote for the Talk
 #   image         -> The image of the presenter or sponsor. Place images in the `public/img` directory. (if blank it will be the DoDSV logo)
@@ -42,8 +42,8 @@ This file contains the schedule of events for the second day.
 #   locationName  -> The location of the item (ie: Auditorium)
 #   presenterName -> The name of the presenter of sponsor of the item
 #   eventClass    -> Type of event (ie: General, Talk, Keynote, Ignite, etc)
-#   info          -> Short description that shows in the tableView. (keep less than 40 chars if possible)
-#   shortTitle    -> The title in the eventDetailView's title bar (keep less than 15 chars if possible)
+#   info          -> Short description that shows in the tableView. (Max chars: 40)
+#   shortTitle    -> The title in the eventDetailView's title bar (Max chars: 15)
 #   desc          -> Full description in the eventDetailView.
 #   twitter       -> Twitter handle for the Presenter or HashTag to promote for the Talk
 #   image         -> The image of the presenter or sponsor. Place images in the `public/img` directory. (if blank it will be the DoDSV logo)

@@ -5,12 +5,15 @@ machine:
 dependencies:
   override:
     - docker info
+    - gem install bundler
+    - cd webapp; bundle install
     - docker build -t parabuzzle/devopsdayssv-webapp .
 
 test:
   override:
+    - cd webapp; rspec
     - docker run -d -p 4567:4567 parabuzzle/devopsdayssv-webapp; sleep 10
-    - curl --retry 10 --retry-delay 5 -v http://localhost:4567/schedule.json
+    - cd webapp; bundle exec ./verify_api
 
 deployment:
   production:
