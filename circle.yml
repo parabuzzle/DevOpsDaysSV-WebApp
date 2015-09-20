@@ -11,7 +11,7 @@ dependencies:
 
 test:
   override:
-    - cd webapp; rspec
+    - cd webapp; rspec --format RspecJunitFormatter --out $CIRCLE_TEST_REPORTS/junit/rspec.xml
     - docker run -d -p 4567:4567 parabuzzle/devopsdayssv-webapp; sleep 10
     - cd webapp; bundle exec ./verify_api
 
