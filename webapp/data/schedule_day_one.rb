@@ -9,7 +9,7 @@
 #   locationName  -> The location of the item (ie: Auditorium)
 #   presenterName -> The name of the presenter of sponsor of the item
 #   eventClass    -> Type of event (ie: General, Talk, Keynote, Ignite, etc)
-#   info          -> Short description that shows in the tableView. (Max chars: 40)
+#   info          -> Short description that shows in the tableView. (Max chars: 45)
 #   shortTitle    -> The title in the eventDetailView's title bar (Max chars: 15)
 #   desc          -> Full description in the eventDetailView.
 #   twitter       -> Twitter handle for the Presenter or HashTag to promote for the Talk
@@ -136,7 +136,7 @@ class Schedule
             presenterName: "Aater Suleman",
             info: "Quick and Easy Multi-tenancy using Docker",
             eventClass: "Ignite",
-            shortTitle: "Docker Multi-tanancy",
+            shortTitle: "Multi-tanancy",
             desc: "lorem ipsum... I got tired of being creative.. sue me :)",
             twitter: "@aatersuleman",
             image: "",
@@ -160,7 +160,7 @@ class Schedule
             presenterName: "Ho Ming Li",
             info: "5 Common Barriers when Introducing Devops",
             eventClass: "Ignite",
-            shortTitle: "5 Common Barriers",
+            shortTitle: "Common Barriers",
             desc: "lorem ipsum... I got tired of being creative.. sue me :)",
             twitter: "@homingli",
             image: "",
@@ -172,7 +172,7 @@ class Schedule
             presenterName: "Andrew Clay Shafer",
             info: "Prepare for Open Spaces!",
             eventClass: "Info Session",
-            shortTitle: "Prepare for Open Spaces!",
+            shortTitle: "Open Spaces",
             desc: "Let's talk about the open spaces and what the goals of open spaces is for DevOpsDays",
             twitter: "@andrewclayshafer",
             image: "",
@@ -196,7 +196,7 @@ class Schedule
             presenterName: "DevOpsDays",
             info: "Open Spaces are in multiple rooms",
             eventClass: "OpenSpace",
-            shortTitle: "Open Space Sessions",
+            shortTitle: "Open Space",
             desc: "blah blah blah",
             twitter: "@DevOpsDaysSV",
             image: "",
@@ -208,7 +208,7 @@ class Schedule
             presenterName: "DevOpsDays",
             info: "Open Spaces are in multiple rooms",
             eventClass: "OpenSpace",
-            shortTitle: "Open Space Sessions",
+            shortTitle: "Open Space",
             desc: "blah blah blah",
             twitter: "@DevOpsDaysSV",
             image: "",
@@ -232,7 +232,7 @@ class Schedule
             presenterName: "DevOpsDays",
             info: "Open Spaces are in multiple rooms",
             eventClass: "OpenSpace",
-            shortTitle: "Open Space Sessions",
+            shortTitle: "Open Space",
             desc: "blah blah blah",
             twitter: "@DevOpsDaysSV",
             image: "",

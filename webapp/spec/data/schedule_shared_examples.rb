@@ -36,8 +36,8 @@ shared_examples :item do
     end
   end
 
-  it 'has info that is no more than 40 chars long' do
-    expect( item[:info].length <= 40 ).to eq(true)
+  it 'has info that is no more than 45 chars long' do
+    expect( item[:info].length <= 45 ).to eq(true)
   end
 
   it 'has a shortTitle that is no more than 15 chars long' do

@@ -44,7 +44,7 @@ Each event item hash must contain all the keys that the iOS app consumes or it w
 #   locationName  -> The location of the item (ie: Auditorium)
 #   presenterName -> The name of the presenter of sponsor of the item
 #   eventClass    -> Type of event (ie: General, Talk, Keynote, Ignite, etc)
-#   info          -> Short description that shows in the tableView. (Max chars: 40)
+#   info          -> Short description that shows in the tableView. (Max chars: 45)
 #   shortTitle    -> The title in the eventDetailView's title bar (Max chars: 15)
 #   desc          -> Full description in the eventDetailView.
 #   twitter       -> Twitter handle for the Presenter or HashTag to promote for the Talk

@@ -10,7 +10,7 @@ schedule_data = HTTParty.get("#{url}/schedule.json")
 
 failures = []
 
-INFO_LENGTH = 40
+INFO_LENGTH = 45
 SHORT_TITLE_LENGTH = 15
 
 def verify_event_data(event)
@@ -43,7 +43,8 @@ rescue
 end
 
 begin
-  failures << "expected 2 days, got #{schedule.keys.length}" if schedule.keys.length != 2
+  failures << "expected key for dayOne" unless schedule.keys.include?('dayOne')
+  failures << "expected key for dayTwo" unless schedule.keys.include?('dayTwo')
   schedule.each do |day, events|
     f = []
     events.each do |event|
