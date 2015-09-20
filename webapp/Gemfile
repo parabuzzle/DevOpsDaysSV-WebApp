@@ -3,6 +3,8 @@ source "https://rubygems.org"
 ruby "2.2.2"
 
 gem 'sinatra'
+gem 'httparty'
+gem 'colorize'
 gem 'pry'
 gem 'oj'
 gem 'unicorn'
@@ -11,3 +13,5 @@ gem 'rake'
 gem 'slim'
 gem 'rack', '~> 1.6.0'
 gem 'sinatra-contrib'
+gem 'rspec'
+gem 'rspec_junit_formatter'

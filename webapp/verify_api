@@ -1,0 +1,72 @@
+#!/usr/bin/env ruby
+require 'httparty'
+require 'json'
+require 'colorize'
+require 'pry'
+
+url = ENV['APP_URL'] || 'http://localhost:4567'
+
+schedule_data = HTTParty.get("#{url}/schedule.json")
+
+failures = []
+
+INFO_LENGTH = 45
+SHORT_TITLE_LENGTH = 15
+
+def verify_event_data(event)
+  _failures = []
+  event.each do |key, value|
+    _failures << "value of #{key} is nil for #{event['info']}" if value.nil?
+    _failures << "value of #{key} is not a string for #{event['info']}" unless value.is_a?( String )
+    case key
+    when 'info'
+      _failures << "info has more than #{INFO_LENGTH} chars for #{key} for #{event['info']}" if value.length > INFO_LENGTH
+    when 'shortTitle'
+      _failures << "info has more than #{SHORT_TITLE_LENGTH} chars for #{key} for #{event['info']}" if value.length > SHORT_TITLE_LENGTH
+    when 'image'
+      # skip tests
+    else
+      _failures << "value of #{key} for #{event['info']} is empty" if value.empty?
+    end
+  end
+  return _failures
+end
+
+unless schedule_data.headers['status'] == "200 OK"
+  failures << "Didn't receive valid response from the api"
+end
+
+begin
+  schedule = JSON.parse( schedule_data.body )
+rescue
+  failures << "Failure parsing JSON"
+end
+
+begin
+  failures << "expected key for dayOne" unless schedule.keys.include?('dayOne')
+  failures << "expected key for dayTwo" unless schedule.keys.include?('dayTwo')
+  schedule.each do |day, events|
+    f = []
+    events.each do |event|
+      f << verify_event_data(event)
+    end
+    unless f.empty?
+      f.flatten.each do |failure|
+        failures << "[#{day}] #{failure}"
+      end
+    end
+  end
+rescue => e
+  puts e
+  failures << "JSON doesn't have a hash at the top-level"
+end
+
+unless failures.empty?
+  failures.each do |failure|
+    puts ' - ' + failure.red
+  end
+  puts " - #{failures.length} failures -"
+  exit 1
+end
+
+puts "Looks Good!".green
