@@ -18,7 +18,7 @@ in most circumstances you won't need to run integration tests. CircleCI will do 
 
   * Run the docker container using `docker-compose up`
   * Set the APP_URL environment variable to the url where the app is running
-  * Run `bundle exec ./verify_api
+  * Run `bundle exec ./verify_api`
 
 example:
 
@@ -69,3 +69,9 @@ image: "heijmans.jpg"
 ```
 
 note: I didn't put `img` in the name. The app knows where to look :wink:
+
+## Sponsor images on About page
+
+Place an image file for the sponsor in the `public/img/sponsors` directory
+
+Note: the image should be 200px x 200px

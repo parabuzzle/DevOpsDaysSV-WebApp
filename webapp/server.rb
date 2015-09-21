@@ -31,6 +31,10 @@ class DoDWeb < Sinatra::Base
     json full_schedule
   end
 
+  get '/sponsors.json' do
+    json Dir['public/img/sponsors/*'].map {|f| File.basename f}
+  end
+
   error 404 do
     "not found :("
   end
