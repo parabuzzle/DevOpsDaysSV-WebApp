@@ -4,6 +4,7 @@ require 'sinatra/base'
 require 'sinatra/contrib'
 require_relative './data/schedule_day_one'
 require_relative './data/schedule_day_two'
+require_relative './data/organizers'
 
 
 class DoDWeb < Sinatra::Base
@@ -33,6 +34,10 @@ class DoDWeb < Sinatra::Base
 
   get '/sponsors.json' do
     json Dir['public/img/sponsors/*'].map {|f| File.basename f}
+  end
+
+  get '/organizers.json' do
+    json Organizers.all.sort {|x,y| x[:name] <=> y[:name]}
   end
 
   error 404 do
