@@ -32,7 +32,7 @@ class Organizers
       {
         name: "Jennifer Davis",
         company: "",
-        twitter: "",
+        twitter: "@sigje",
         image: "",
         bio: ".",
       },
