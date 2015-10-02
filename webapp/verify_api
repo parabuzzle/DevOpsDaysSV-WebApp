@@ -25,6 +25,8 @@ def verify_event_data(event)
       _failures << "info has more than #{SHORT_TITLE_LENGTH} chars for #{key} for #{event['info']}" if value.length > SHORT_TITLE_LENGTH
     when 'image'
       # skip tests
+    when 'presenterName'
+      # skip empty test
     else
       _failures << "value of #{key} for #{event['info']} is empty" if value.empty?
     end
