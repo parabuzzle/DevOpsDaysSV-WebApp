@@ -1,7 +1,7 @@
-# This is the event schedule data class for the second day
+# This is the organizer data
 #
-# There is one method `schedule` and it returns an array of event items
-#   note: the order of the array is the order it will show in the app
+# There is one method `all` and it returns an array of event items
+#   note: the order of the array is irrelevant, the order will be alphabetical on name
 #
 # Each event item must be a hash and must contatin the following keys:
 #   name     -> The Start time of the item
@@ -20,14 +20,21 @@ class Organizers
         company: "Twitter, Inc.",
         twitter: "@parabuzzle",
         image: "heijmans.jpg",
-        bio: "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.",
+        bio: "Mike Heijmans has over 10 years of experience in the tech industry. He is a Builder, Rubyist, DevOps engineer, Public Speaker, Musician, Entertainer, Tinkerer, and Open Source Advocate.",
       },
       {
-        name: "Aaron S",
-        company: "freelance",
+        name: "Lisa Heijmans",
+        company: "Freelance Designer",
         twitter: "",
         image: "",
-        bio: "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.",
+        bio: "Lisa is a freelance designer and artist that specializes in total experience design and brand building.",
+      },
+      {
+        name: "Jennifer Davis",
+        company: "",
+        twitter: "",
+        image: "",
+        bio: ".",
       },
     ]
   end

@@ -36,6 +36,7 @@ shared_examples :organizers_item do
     item.each do |k,v|
       next if k == :image
       next if k == :twitter
+      next if k == :company
       expect( v.empty? ).to be(false)
     end
   end

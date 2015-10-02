@@ -47,6 +47,7 @@ shared_examples :item do
   it 'has all required values filled' do
     item.each do |k,v|
       next if k == :image
+      next if k == :presenterName
       expect( v.empty? ).to be(false)
     end
   end
