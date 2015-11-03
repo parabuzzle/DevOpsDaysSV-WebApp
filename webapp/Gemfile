@@ -15,3 +15,6 @@ gem 'rack', '~> 1.6.0'
 gem 'sinatra-contrib'
 gem 'rspec'
 gem 'rspec_junit_formatter'
+gem 'guard'
+gem 'guard-rspec'
+
