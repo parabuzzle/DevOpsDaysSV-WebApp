@@ -32,7 +32,7 @@ class Organizers
       {
         name: "Ilan Rabinovitch",
         company: "",
-        twitter: "@sigje",
+        twitter: "@irabinovitch",
         image: "ilan_rabinovitch.jpg",
         bio: "Ilan Rabionvitch is a co-founder of the Southern California Linux Expo (SCALE), Texas Linux Fest, and is a frequent contributor to community organized open source and DevOps focused events.  Ilan current serves as president of LinuxFests, where he helps open source communities launch and operate their own events by providing fiscal sponsorship, logistics support, and event planning mentorship.  Ilan is currently employed by Datadog as their Director of Technical Community and Evangelism.",
       },
