@@ -24,7 +24,7 @@ class Schedule
         {
           timeStart:     "8:15",
           timeEnd:       "9:15",
-          locationName:  "Main Area",
+          locationName:  "Grand Hall",
           presenterName: "DevOpsDays",
           info:          "Registration and Sponsor Booths Open",
           eventClass:    "General",
@@ -134,7 +134,7 @@ This presentation is about concepts and how to think about alternative anomaly d
         {
           timeStart:     "11:55",
           timeEnd:       "12:00",
-          locationName:  "Auditorium",
+          locationName:  "Hahn Auditorium",
           presenterName: "TBA",
           info:          "TBA",
           eventClass:    "Ignite",
@@ -146,7 +146,7 @@ This presentation is about concepts and how to think about alternative anomaly d
         {
           timeStart:     "12:00",
           timeEnd:       "12:05",
-          locationName:  "Auditorium",
+          locationName:  "Hahn Auditorium",
           presenterName: "TBA",
           info:          "TBA",
           eventClass:    "Ignite",
@@ -158,7 +158,7 @@ This presentation is about concepts and how to think about alternative anomaly d
         {
           timeStart:     "12:05",
           timeEnd:       "12:10",
-          locationName:  "Auditorium",
+          locationName:  "Hahn Auditorium",
           presenterName: "TBA",
           info:          "TBA",
           eventClass:    "Ignite",
@@ -170,7 +170,7 @@ This presentation is about concepts and how to think about alternative anomaly d
         {
           timeStart:     "12:10",
           timeEnd:       "12:15",
-          locationName:  "Auditorium",
+          locationName:  "Hahn Auditorium",
           presenterName: "TBA",
           info:          "TBA",
           eventClass:    "Ignite",
@@ -182,7 +182,7 @@ This presentation is about concepts and how to think about alternative anomaly d
         {
           timeStart:     "1:30",
           timeEnd:       "2:00",
-          locationName:  "Auditorium",
+          locationName:  "Hahn Auditorium",
           presenterName: "TBA",
           info:          "Open Spaces Intro",
           eventClass:    "Intro",
@@ -242,7 +242,7 @@ This presentation is about concepts and how to think about alternative anomaly d
         {
           timeStart:     "4:45",
           timeEnd:       "5:00",
-          locationName:  "Auditorium",
+          locationName:  "Hahn Auditorium",
           presenterName: "TBA",
           info:          "Closing Day One",
           eventClass:    "Keynote",
