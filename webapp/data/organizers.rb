@@ -43,6 +43,13 @@ class Organizers
         image: "lisa_heijmans.jpg",
         bio: "Lisa is a freelance designer and artist that specializes in total experience design and brand building.",
       },
+      {
+        name: "L J Laubenheimer",
+        company: "",
+        twitter: "ljl_geek",
+        image: "purple_pomkin_200.jpg",
+        bio: "Working in tech for dev/ops for 15 years. Iconoclast, anything else is subject to change.",
+      },
     ]
   end
 end
