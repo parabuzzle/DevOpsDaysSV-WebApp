@@ -140,7 +140,7 @@ This presentation is about concepts and how to think about alternative anomaly d
           eventClass:    "Ignite",
           shortTitle:    "4jobs 4years",
           desc:          "4 jobs in 4 years: a devops empathy journey",
-          twitter:       "@DevOpsDaysSV",
+          twitter:       "@chipadeedoodah",
           image:         "",
         },
         {
@@ -152,7 +152,7 @@ This presentation is about concepts and how to think about alternative anomaly d
           eventClass:    "Ignite",
           shortTitle:    "Code Blue",
           desc:          "Code Blue",
-          twitter:       "@DevOpsDaysSV",
+          twitter:       "@ubergeekgirl",
           image:         "",
         },
         {
@@ -164,7 +164,7 @@ This presentation is about concepts and how to think about alternative anomaly d
           eventClass:    "Ignite",
           shortTitle:    "Lessons",
           desc:          "The U.S. Army Listening School: Lessons from an interrogator",
-          twitter:       "@DevOpsDaysSV",
+          twitter:       "@BrainScraps",
           image:         "",
         },
         {
@@ -188,7 +188,7 @@ This presentation is about concepts and how to think about alternative anomaly d
           eventClass:    "Ignite",
           shortTitle:    "Lessons",
           desc:          "Lessons from the urban classroom",
-          twitter:       "@DevOpsDaysSV",
+          twitter:       "@dshack",
           image:         "",
         },
         {

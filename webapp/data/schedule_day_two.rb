@@ -152,7 +152,7 @@ In this talk I will help you learn how to recognize the early signs and stop you
           eventClass:    "Ignite",
           shortTitle:    "Remote Working",
           desc:          "5 simple rules to make remote working work”",
-          twitter:       "@DevOpsDaysSV",
+          twitter:       "@seemaj",
           image:         "",
         },
         {
@@ -176,7 +176,7 @@ In this talk I will help you learn how to recognize the early signs and stop you
           eventClass:    "Ignite",
           shortTitle:    "Many Hands",
           desc:          "Many Hands Make Light Work",
-          twitter:       "@DevOpsDaysSV",
+          twitter:       "@behemphi",
           image:         "",
         },
         {
@@ -188,7 +188,7 @@ In this talk I will help you learn how to recognize the early signs and stop you
           eventClass:    "Ignite",
           shortTitle:    "Cognitive BCP",
           desc:          "Cognitive BCP (Dealing with Human Memory Corruption)",
-          twitter:       "@DevOpsDaysSV",
+          twitter:       "@ljl_geek",
           image:         "",
         },
         {
