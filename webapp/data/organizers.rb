@@ -50,6 +50,13 @@ class Organizers
         image: "purple_pomkin_200.jpg",
         bio: "Working in tech for dev/ops for 15 years. Iconoclast, anything else is subject to change.",
       },
+      {
+        name: "Peter Mooshammer",
+        company: "",
+        twitter: "",
+        image: "peter.jpg",
+        bio: "After dabbling around for ages with hardware, firmware and database, Peter made the leap to DevOps. Enjoying his time in Silicon Valley he helps organizing the Silicon Valley chapter of the Google Developers Group as well as the Docker Meetup in Palo Alto and the Bay Area Infracoders Meetup.",
+      },
     ]
   end
 end
